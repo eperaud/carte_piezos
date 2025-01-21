@@ -18,13 +18,9 @@ var jsonSource_couche_piezos_1 = new ol.source.Vector({
     attributions: ' ',
 });
 jsonSource_couche_piezos_1.addFeatures(features_couche_piezos_1);
-cluster_couche_piezos_1 = new ol.source.Cluster({
-  distance: 30,
-  source: jsonSource_couche_piezos_1
-});
 var lyr_couche_piezos_1 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_couche_piezos_1, 
+                source:jsonSource_couche_piezos_1, 
                 style: style_couche_piezos_1,
                 popuplayertitle: 'couche_piezos',
                 interactive: true,
